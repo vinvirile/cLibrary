@@ -30,10 +30,3 @@ const cc = {
             }
         }
 }
-
-
-//TESTING AREA
-cc.log("nlarr", ["Line1", "Line2", "Line3", "Line4", ["Array2","Line1","Line2"]]);
-cc.log("test");
-
-cc.log(cc.Math.roundToCx(3432.34643223, 1000));
