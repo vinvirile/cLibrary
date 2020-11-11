@@ -49,7 +49,7 @@ const cc = {
                     if (html) {
                         document.getElementById(id).innerHTML=html;
                     } else {
-                        return false;
+                        return document.getElementById(id).innerHTML='';
                     }
                 } else {
                     return false;
