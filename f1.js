@@ -1,6 +1,6 @@
 const cc = {
     about: "This was created by cagycee. ~more info~",
-    version: `${0.01}alpha`,
+    version: `${0.03}alpha`,
     log: (param1, param2) => {
         if (param2===undefined) {
             console.log(param1);
