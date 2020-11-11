@@ -1,6 +1,6 @@
 const cc = {
     about: "This was created by cagycee. ~more info~",
-    version: `${0.03}alpha`,
+    version: `${0.04}.${1}alpha`,
     log: (param1, param2) => {
         if (param2===undefined) {
             console.log(param1);
@@ -27,6 +27,43 @@ const cc = {
                 } else {
                     return false;
                 }
+            },
+            roundToS: (num, place) => {
+                if (place) {
+                    //incomplete
+                }
             }
+
+        },
+    HTML:
+        {
+            id: (id) => {
+                if (id) {
+                    return document.getElementById(id);
+                } else {
+                    return false;
+                }
+            },
+            replace: (id, html) => {
+                if (id) {
+                    if (html) {
+                        document.getElementById(id).innerHTML=html;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return false;
+                }
+            },
+            value: (id, type) => {
+                if (id) {
+                    if (type==='html') {
+                        return document.getElementById(id).innerHTML;
+                    } else if (type==='input') {
+                        return document.getElementById(id).value;
+                    }
+                }
+            }
+            
         }
-}
+};
