@@ -1,6 +1,6 @@
 const cc = {
     about: "This was created by cagycee. ~more info~",
-    version: `${0.04}.${1}alpha`,
+    version: `${0.04}.${5}alpha`,
     log: (param1, param2) => {
         if (param2===undefined) {
             console.log(param1);
@@ -65,5 +65,15 @@ const cc = {
                 }
             }
             
+        },
+    Array: 
+        {
+            list: (arr) => {
+                if (arr) {
+                    for (var i = 0; i < arr.length; i++) {
+                        return arr[i] + '\n';
+                    }
+                }
+            }
         }
 };
