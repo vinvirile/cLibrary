@@ -44,7 +44,7 @@ class cLibrary {
         if ($str===null) {
             throw new Exception('No string to encrypt');
         } else if ($key===null) {
-            throw new Exception('Cannot encrypt '.$str. ' wihtout key');
+            throw new Exception('Cannot encrypt '.$str. ' without key');
         } else {
             return openssl_encrypt($this->cp['str'], $this->cp['method'], $this->cp['key'], $this->cp['option'], $this->cp['iv']);
         }
