@@ -1,7 +1,7 @@
 <?php
 //cLibrary PHP initially started 12/3/2020 by Serra Jones(cagycee).
 class cLibrary {
-    public static $version = '0.1.0a';
+    public static $version = '0.1.2a';
     private $coninfo;
     private $cp;
     private $dp;
@@ -29,7 +29,7 @@ class cLibrary {
 
     public function encrypt($str, $key, $iM=null, $i=null, $o=null) {
         /* ENCRYPTS ANY DATA USING OPENSSL
-         * EX: $encrypted = $cc->encrypt('THISISASTRING', 'BLAHBLAHKEYTHIS');
+         * EX: $variable = $clname->encrypt('THISISASTRING', 'BLAHBLAHKEYTHIS');
          * NOTE: By changing the IV method and/or IV number, your encryption will become more secure! 
          * Reassure that you are using the same method, key, option, and iv for the counterpart function decrypt()!
          * FULL USE: $variable = $clvar->encrypt('THISISASTRING', 'BLAHBLAHKEYTHIS', 'aes-128-cbc', '6584692267521658', null);
@@ -52,7 +52,7 @@ class cLibrary {
 
     public function decrypt($enc, $key, $iM=null, $i=null, $o=null) {
         /* DECRYPTS a specific ENCRYPTION USING OPENSSL. REQUIRED TO KNOW ENCRYPTION's IV METHOD, IV #, OPTION, and KEY
-         * EX: $encrypted = $cc->decrypt('THISISASTRING', 'BLAHBLAHKEYTHIS'); #ONLY IF YOU HAVEN'T PROVIDED the IV, 
+         * EX: $variable = $clname->decrypt('THISISASTRING', 'BLAHBLAHKEYTHIS'); #ONLY IF YOU HAVEN'T PROVIDED the IV, 
          * Reassure that you are using the same method, key, option, and iv for the counterpart function encrypt()!
          * FULL USE: $variable = $clvar->decrypt('vmUqpYqnk66FoPwIllAbpg==', 'BLAHBLAHKEYTHIS', 'aes-128-cbc', '6584692267521658', null);
          */
