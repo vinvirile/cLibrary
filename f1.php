@@ -1,5 +1,5 @@
 <?php
-//cLibrary PHP initially started 12/3/2020 by Serra Jones(cagycee).
+//cLibrary PHP initially started 12/3/2020 by Vincent Robinson Jones.
 class cLibrary {
     public static $version = '0.1.2a';
     private $coninfo;

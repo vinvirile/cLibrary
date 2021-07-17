@@ -1,5 +1,5 @@
 const cc = {
-    about: "This was created by cagycee. ~more info~",
+    about: "This was created by Vincent. ~more info~",
     version: `${0.04}.${5}alpha`,
     log: (param1, param2) => {
         if (param2===undefined) {
